@@ -26,8 +26,8 @@ def create_training(json_file: str, nlp: Language):
 
 nlp = spacy.blank('en')
 
-training_data = create_training('training_data.json', nlp)
+training_data = create_training('data/training_data.json', nlp)
 training_data.to_disk("./spacy_format_data/training_data.spacy")
 
-validation_data = create_training('validation_data.json', nlp)
+validation_data = create_training('data/validation_data.json', nlp)
 validation_data.to_disk("./spacy_format_data/validation_data.spacy")
